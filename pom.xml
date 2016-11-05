@@ -21,7 +21,7 @@
             <plugin>
                 <groupId>org.asciidoctor</groupId>
                 <artifactId>asciidoctor-maven-plugin</artifactId>
-                <version>${asciidoctor.maven.plugin.version}</version>              
+                <version>${asciidoctor.maven.plugin.version}</version>
                 <dependencies>
                     <!-- Comment this section to use the default jruby artifact provided by the plugin -->
                     <dependency>
@@ -74,7 +74,7 @@
                               </attributes>
 
                             Embed stylesheets and images::
-                            
+
                               - set embedAssets option to true
                               - don't set linkcss attribute
                               - set imagesdir attribute to path relative to project root
@@ -85,7 +85,7 @@
                               </attributes>
 
                             Link to stylesheets but embed images::
-                            
+
                               - set embedAssets option to true
                               - set linkcss attribute to true
                               - set imagesdir attribute to path relative to project root
@@ -97,7 +97,7 @@
                               </attributes>
 
                             Embed stylesheets but link images (default)::
-                            
+
                               - don't set embedAssets option
                               - don't set linkcss attribute
                               - set imagesdir attribute to path relative to AsciiDoc source file
@@ -109,7 +109,10 @@
                             IMPORTANT: When you enable image embedding, you must qualify the path the the imagesdir, as shown above.
                             -->
                             <attributes>
+                                <linkcss>true</linkcss>
+                                <stylesheet>refcard.css</stylesheet>
                                 <imagesdir>./images</imagesdir>
+                                <toclevels>1</toclevels>
                                 <toc>left</toc>
                                 <icons>font</icons>
                                 <sectanchors>true</sectanchors>
