@@ -116,7 +116,7 @@
                                 <stylesheet>refcard.css</stylesheet>
                                 <imagesdir>./images</imagesdir>
                                 <toclevels>1</toclevels>
-                                <toc>left</toc>
+                                <!--toc>left</toc-->
                                 <icons>font</icons>
                                 <sectanchors>true</sectanchors>
                                 <!-- set the idprefix to blank -->

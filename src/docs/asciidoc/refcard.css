@@ -697,3 +697,39 @@ body { background-image: url('../images/maker/body-bg.png?1478343251'); padding-
 
 .imageblock > .content { text-align: center; }
 .imageblock > .title { text-align: center; font-style: italic; font-weight: normal; color: black; }
+
+/* manual changes directly in css, later to be transferred to the sass-file.*/ 
+refcard {
+  -webkit-columns: 3 200px;
+     -moz-columns: 3 200px;
+          columns: 3 200px;
+          display: block;
+
+/*
+  -webkit-column-rule: 4px outset #ff00ff;
+     -moz-column-rule: 4px outset #ff00ff;
+          column-rule: 4px outset #ff00ff;     
+*/     
+}
+
+.sect1 {
+	/*
+-webkit-column-break-inside: avoid; 
+          page-break-inside: avoid; 
+               break-inside: avoid; */
+               background-color: green;
+}
+
+.sect2 {
+-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+               background-color: yellow;
+}
+
+/* looks like this has the same effect as having header and footer outside of the refcard element. */
+#header {
+  -webkit-column-span: all; /* Chrome, Safari, Opera */
+     -moz-column-span: all; /* not (yet?) supported */
+          column-span: all;
+}

@@ -21,7 +21,8 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
     style=style_value(max_width: (attr 'max-width')))
     - unless noheader
       include _header.html
-    #content =content
+    refcard  
+      #content =content
     - unless !footnotes? || (attr? :nofootnotes)
       include _footnotes.html
     - unless nofooter
